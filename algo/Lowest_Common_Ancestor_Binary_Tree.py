@@ -40,7 +40,7 @@ def lca(root, n1, n2):
     if root.data > n1 and root.data > n2:
         return lca(root.left, n1, n2)
 
-        # If both n1 and n2 are greater than root, then LCA
+    # If both n1 and n2 are greater than root, then LCA
     # lies in right
     if root.data < n1 and root.data < n2:
         return lca(root.right, n1, n2)
