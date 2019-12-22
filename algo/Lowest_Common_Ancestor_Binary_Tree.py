@@ -1,24 +1,8 @@
 # Lowest Common Ancestor in a Binary Search Tree
 # common Node of two node
-"""
-ALGO:
-
-lca(root, n1, n2){
-if root==None: return Null
-if root==n1 and root==n2: return n2
-left=lca(root, n1, n2)
-right=lca(root, n1, n2)
-if(left!=None and right!= None): return root
-if(left==None and right== None): return None
-return left if left!=None else right
-
-}
-"""
-
-
 # n1 and n2
 
-# A Binary tree node
+
 class Node:
 
     # Constructor to create a new node
@@ -62,3 +46,6 @@ if __name__ == '__main__':
     n2 = 14
     t = lca(root, n1, n2)
     print("LCA of %d and %d is %d" % (n1, n2, t.data))
+    # or
+    print("LCA of %d and %d is %d" % (n1, n2, lca(root, n1, n2).data))
+
