@@ -1,3 +1,9 @@
+"""
+BCTC ------ AVGCTC --------- WCTC
+O(n)         O(n^2)         O(n^2)
+"""
+
+
 def bubble_sort(num):
     n = len(num)
     for i in range(n):

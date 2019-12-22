@@ -1,3 +1,9 @@
+"""
+BCTC ------ AVGCTC --------- WCTC
+O(n^2)      O(n^2)          O(n^2)
+
+"""
+
 def selection_sort(nums):
     for i in range(len(nums)):
         index = i

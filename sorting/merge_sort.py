@@ -1,3 +1,9 @@
+"""
+BCTC ------ AVGCTC --------- WCTC
+O(nlog(n))         O(nlog(n))         O(nlog(n))
+
+"""
+
 def merge_sort(lst):
     if len(lst)>1:
         mid_index=len(lst)//2
