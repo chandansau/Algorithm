@@ -1,11 +1,15 @@
+# How are duplicates removed from a given array in Java? (solution)
+
+
 def rm_duplicate(lst):
-    temp_lst = []
-    for val in lst:
-        if val not in temp_lst:
-            temp_lst.append(val)
-    return temp_lst
+    b = []
+    for i in lst:
+        if lst.count(i) == 1:
+            b.append(i)
+    return b
 
 
-numbers = [1, 2, 2, 4, 4, 5]
-org_val = rm_duplicate(numbers)
-print(org_val)
+lst = [1, 2, 2, 4, 4, 5]
+print(rm_duplicate(lst))
+
+
