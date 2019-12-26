@@ -12,3 +12,13 @@ def unique_pair(a):
 
 a = [(5, 7), (3, 9), (3, 9), (2, 2), (2, 2)]
 print(unique_pair(a))
+
+
+# ---------------------- 2nd process -------------------------------
+
+def unique_pair(n):
+    return list(set(n))
+
+
+print(unique_pair(a))
+
