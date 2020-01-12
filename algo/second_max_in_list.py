@@ -8,13 +8,12 @@ def snd_lrgst(l):
         if x > _max:
             smax = _max
             _max = x  # x is letest highest value
-        else:
+        elif x < _max and x > smax:
             smax = x
     return _max, smax
 
 
 print(snd_lrgst([2, 3, 4, 2, 8, 6, 10, 9, 12]))
-
 
 # ------------------2nd process-----------------------------
 
